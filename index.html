@@ -7,21 +7,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"></script>
     <script src="app.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container{
+            max-width: 800px; margin: 0 auto;
+            border: 1px solid #ccc; padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: antiquewhite;
+        }
+        #button{
+            text-align: center;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        body {
+            font-family: Arial, sans-serif; padding: 20px; }
         input, button { margin: 5px; }
+        h1{
+            text-align: center;
+        }
     </style>
 </head>
-<body>
+<body><div class="container">
     <h1>Organ Donation DApp</h1>
 
-    <div>
+    <div >
         <h2>Register Donor</h2>
         <input type="text" id="donorName" placeholder="Donor Name">
         <input type="text" id="organ" placeholder="Organ (e.g., Kidney)">
         <button onclick="registerDonor()">Register Donor</button>
     </div>
 
-    <div>
+    <div >
         <h2>Register Receiver</h2>
         <input type="text" id="receiverName" placeholder="Receiver Name">
         <input type="text" id="organNeeded" placeholder="Organ Needed (e.g., Kidney)">
@@ -36,5 +53,6 @@
     </div>
 
     <div id="status"></div>
+</div>
 </body>
 </html>
