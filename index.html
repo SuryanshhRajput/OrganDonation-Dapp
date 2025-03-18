@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation DApp</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, button { margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Organ Donation DApp</h1>
+
+    <div>
+        <h2>Register Donor</h2>
+        <input type="text" id="donorName" placeholder="Donor Name">
+        <input type="text" id="organ" placeholder="Organ (e.g., Kidney)">
+        <button onclick="registerDonor()">Register Donor</button>
+    </div>
+
+    <div>
+        <h2>Register Receiver</h2>
+        <input type="text" id="receiverName" placeholder="Receiver Name">
+        <input type="text" id="organNeeded" placeholder="Organ Needed (e.g., Kidney)">
+        <button onclick="registerReceiver()">Register Receiver</button>
+    </div>
+
+    <div>
+        <h2>Match Donor & Receiver</h2>
+        <input type="number" id="donorId" placeholder="Donor ID">
+        <input type="number" id="receiverId" placeholder="Receiver ID">
+        <button onclick="matchDonorReceiver()">Match</button>
+    </div>
+
+    <div id="status"></div>
+</body>
+</html>
